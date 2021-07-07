@@ -2,12 +2,12 @@ package com.orhanararat.controller;
 
 import com.orhanararat.configuration.ApplicationParameters;
 import com.orhanararat.model.Limits;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class LimitsController {
     private final ApplicationParameters configuration;
 

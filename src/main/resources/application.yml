@@ -3,7 +3,11 @@ spring:
     import: optional:configserver:http://localhost:8888
   application:
     name: limits-service
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URI:http://localhost:8888}
+      fail-fast: true
 
 limits-service:
   minimum: 2
-  maximum: 998
+  maximum: 995
